@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">2026_tresenraya</string>
+    <string name="appTitle">Tres en Raya</string>
+    <string name="turnoX">Turno de: X</string>
+    <string name="turnoO">Turno de: O</string>
+    <string name="gano">¡Ganó %s!</string>
+</resources>
