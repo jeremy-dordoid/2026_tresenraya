@@ -4,4 +4,5 @@
     <string name="turnoX">Turno de: X</string>
     <string name="turnoO">Turno de: O</string>
     <string name="gano">¡Ganó %s!</string>
+    <string name="empate">¡Empate!</string>
 </resources>

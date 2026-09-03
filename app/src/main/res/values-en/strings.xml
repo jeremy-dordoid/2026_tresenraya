@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">2026_tresenraya</string>
+    <string name="appTitle">Tic Tac Toe</string>
+    <string name="turnoX">Turn: X</string>
+    <string name="turnoO">Turn: O</string>
+    <string name="gano">%s won!</string>
+    <string name="empate">Draw!</string>
+</resources>

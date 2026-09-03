@@ -58,10 +58,28 @@ class MainActivity : AppCompatActivity() {
 
         if (hayGanador) {
             juegoTerminado = true
+            deshabilitarBotones()
+        } else if (verificarEmpate()) {
+            juegoTerminado = true
+            txvEstado.text = getString(R.string.empate)
+            deshabilitarBotones()
         } else {
             turnoX = !turnoX
             actualizarTurno()
         }
+    }
+
+    private fun verificarEmpate(): Boolean {
+        for (fila in 0 until rows) {
+            for (columna in 0 until cols) {
+                if (tablero[fila][columna] == "") return false
+            }
+        }
+        return true
+    }
+
+    private fun deshabilitarBotones() {
+        for (boton in botones) boton.isEnabled = false
     }
 
 
@@ -71,7 +89,10 @@ class MainActivity : AppCompatActivity() {
 
 
     private fun reiniciarJuego() {
-        for (boton in botones) boton.text = ""
+        for (boton in botones) {
+            boton.text = ""
+            boton.isEnabled = true
+        }
         for (fila in 0 until rows) {
             for (columna in 0 until cols) {
                 tablero[fila][columna] = ""
